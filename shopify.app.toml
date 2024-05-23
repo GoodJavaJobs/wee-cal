@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "5e33f0fdedef72c786ea76dcf2053e03"
+name = "wee-calculator"
+handle = "wee-calculator"
+application_url = "https://mj-directory-fist-sms.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "seo-club-store.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://mj-directory-fist-sms.trycloudflare.com/auth/callback",
+  "https://mj-directory-fist-sms.trycloudflare.com/auth/shopify/callback",
+  "https://mj-directory-fist-sms.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
